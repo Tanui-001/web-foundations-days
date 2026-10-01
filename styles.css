@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: hsl(180, 75%, 63%);
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background-color: hsl(180, 75%, 63%);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: hsl(180, 75%, 63%);
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+main > h2,
+main > p {
+  text-align: center;
+}
+
+section {
+  background-color: white;
+  color: hsl(180, 75%, 63%);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  background-color: hsl(180, 75%, 63%);
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 12px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  background-color: hsl(180, 75%, 63%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: hsl(180, 75%, 63%);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font: inherit;
+  background-color: hsl(180, 7%, 38%);
+  color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(39, 37, 37);
+}
+
+button {
+  padding: 10px 18px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: white;
+  color: #066279;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #066279;
+  color: white;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  background-color: #066279;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 6px 10px;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
